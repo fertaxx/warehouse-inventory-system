@@ -1,148 +1,64 @@
-# Sistema de Almacén e Inventario - InnoTech
+# Warehouse & Inventory System — Desktop Management App
 
-Sistema de gestión de almacén e inventario desarrollado en Java con Swing para la Actividad Nro11 de Desarrollo de Software.
+A complete desktop application for warehouse and inventory management built with Java Swing. Handles client registration, product control, stock management, and full CRUD operations with a modern UI.
 
-## 📋 Descripción
+## Features
 
-Aplicación de escritorio que permite gestionar:
-- **Clientes**: Registro y gestión de clientes
-- **Productos**: Control de inventario de productos
+| Module | Features |
+|---|---|
+| Authentication | Login system with credential validation, modern UI |
+| Clients | Register clients with DNI/RUC, search, edit, full CRUD |
+| Products | Inventory control, pricing, stock management, full CRUD |
+| Dashboard | Real-time clock, quick access to all modules |
 
-## 🚀 Características
+## Tech Stack
 
-### Sistema de Login
-- Autenticación de usuarios
-- Validación de credenciales
-- Interfaz moderna con diseño personalizado
+![Java](https://img.shields.io/badge/Java_8+-ED8B00?style=flat&logo=openjdk&logoColor=white)
+![Swing](https://img.shields.io/badge/Java_Swing-GUI-ED8B00?style=flat&logo=openjdk&logoColor=white)
+![Maven](https://img.shields.io/badge/Maven-C71A36?style=flat&logo=apache-maven&logoColor=white)
+![MySQL](https://img.shields.io/badge/MySQL-00000F?style=flat&logo=mysql&logoColor=white)
 
-### Menú Principal
-- Acceso rápido a los 2 módulos principales
-- Reloj en tiempo real
-- Navegación intuitiva
+- **Language:** Java 8+
+- **GUI:** Java Swing with custom modern design
+- **Build tool:** Apache Maven
+- **Database:** MySQL (integration ready — see docs)
+- **Architecture:** MVC pattern
 
-### Gestión de Clientes
-- Registro de clientes con DNI y RUC
-- Búsqueda y edición de información
-- Tabla de visualización de datos
-- Operaciones CRUD completas
+## Quick Start
 
-### Gestión de Productos
-- Control de inventario
-- Registro de precios y cantidades
-- Gestión de stock
-- Operaciones CRUD completas
+**Requirements:** JDK 8+ · Maven 3.6+ · NetBeans or any Java IDE
 
-## 🛠️ Tecnologías
-
-- **Java 8+**
-- **Swing** (GUI)
-- **Maven** (Gestión de dependencias)
-
-## 📦 Estructura del Proyecto
-
-```
-src/main/java/com/empresa/sistema_de_almacen_inventario/
-├── modelos/
-│   ├── Cliente.java
-│   └── Producto.java
-├── vistas/
-│   ├── Frm_Login.java
-│   ├── Frm_MenuPrincipal.java
-│   ├── Frm_Clientes.java
-│   └── Frm_Productos.java
-└── Sistema_de_almacen_inventario.java
+```bash
+git clone https://github.com/fertaxx/warehouse-inventory-system.git
+cd warehouse-inventory-system
+mvn clean compile
+mvn exec:java
 ```
 
-## 🔧 Instalación y Ejecución
+Or open in NetBeans → right click project → Run
 
-### Requisitos Previos
-- JDK 8 o superior
-- Maven 3.6+
-- NetBeans IDE (recomendado) o cualquier IDE Java
+**Test credentials:**
 
-### Pasos para ejecutar
+Username: admin
 
-1. **Clonar o descargar el proyecto**
+Password: admin
 
-2. **Compilar el proyecto con Maven:**
-   ```bash
-   mvn clean compile
-   ```
+## Database Setup
 
-3. **Ejecutar la aplicación:**
-   ```bash
-   mvn exec:java
-   ```
+Full SQL scripts included:
+- `database_script.sql` — main structure
+- `inventario_db.sql` — initial data
 
-   O desde NetBeans:
-   - Abrir el proyecto
-   - Click derecho en el proyecto → Run
+See `GUIA_INTEGRACION_BASE_DE_DATOS.md` for full setup instructions.
 
-## 👤 Credenciales de Prueba
+## Highlights
 
-Para acceder al sistema, use las siguientes credenciales:
+- Custom draggable windows with hover effects
+- Interactive data tables with inline editing
+- Field validation on all forms
+- Corporate color scheme with modern flat design
+- Ready for MySQL database integration
 
-- **Usuario:** admin
-- **Contraseña:** admin
+## Author
 
-## 📝 Uso del Sistema
-
-### 1. Login
-- Ingresar email y contraseña
-- Click en "Acceder"
-
-### 2. Menú Principal
-- Seleccionar el módulo deseado desde el menú lateral o los iconos centrales
-
-### 3. Gestión de Clientes
-- Click en "Clientes" desde el menú o tarjeta central
-- Click en "Nuevo Cliente" para limpiar el formulario
-- Completar los datos del cliente
-- Click en "Guardar" para registrar
-- Seleccionar un cliente de la tabla para editar
-
-### 4. Gestión de Productos
-- Click en "Productos" desde el menú o tarjeta central
-- Ingresar datos del producto
-- Seleccionar marca del combo box
-- Marcar "Stock" si está disponible
-- Click en "Guardar"
-
-## 🎨 Características de la Interfaz
-
-- Diseño moderno con colores corporativos
-- Ventanas arrastrables
-- Botones con efectos hover
-- Tablas interactivas
-- Validación de campos
-
-## 📌 Notas Importantes
-
-- Los datos se almacenan en memoria (no hay persistencia en base de datos)
-- Al cerrar la aplicación, los datos se pierden
-- Para implementar persistencia, se puede integrar con MySQL, PostgreSQL o archivos
-
-## 🔜 Mejoras Futuras
-
-- [ ] Integración con base de datos
-- [ ] Reportes en PDF
-- [ ] Gráficos estadísticos
-- [ ] Sistema de respaldo
-- [ ] Búsqueda avanzada con filtros
-- [ ] Módulo de ventas
-- [ ] Gestión de proveedores
-- [ ] Sistema de usuarios y permisos
-
-## 👨‍💻 Autor
- 
-Fernando Dionicio Castillo
-
-## 📄 Licencia
-
-Este proyecto es parte de una actividad académica para SENATI.
-
----
-
-**InnoTech** - Servicio de Gestión e Inventario  
-Autorizado por: Sistema de Gestión Empresarial SAC  
-Distribuido por: Consac Peru
+**Fernando Dionicio** — [github.com/fertaxx](https://github.com/fertaxx)
