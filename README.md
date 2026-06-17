@@ -134,10 +134,8 @@ Para acceder al sistema, use las siguientes credenciales:
 - [ ] Sistema de usuarios y permisos
 
 ## 👨‍💻 Autor
-
-**alu_torre1**  
-Actividad Nro11 - Desarrollo de Software  
-SENATI
+ 
+Fernando Dionicio Castillo
 
 ## 📄 Licencia
 
